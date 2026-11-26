@@ -1,0 +1,146 @@
+.navegacao-admin {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem max(1rem, calc((100% - 1100px) / 2));
+  background: #202a35;
+}
+
+.navegacao-admin a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.pagina-admin {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.cabecalho-admin,
+.acoes-admin {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.cartoes-dashboard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.cartao-dashboard {
+  padding: 1.25rem;
+  border: 1px solid #d5dbe1;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.cartao-dashboard p {
+  margin: 0 0 0.5rem;
+}
+
+.cartao-dashboard strong {
+  font-size: 1.75rem;
+}
+
+.formulario-admin {
+  display: grid;
+  gap: 1rem;
+  max-width: 560px;
+  margin: 1.5rem 0;
+}
+
+.formulario-admin label {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.formulario-admin input,
+.formulario-admin select,
+.formulario-admin textarea,
+.filtro-admin {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #aeb8c2;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.formulario-admin textarea {
+  min-height: 6rem;
+  resize: vertical;
+}
+
+.formulario-admin .campo-checkbox {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.formulario-admin .campo-checkbox input {
+  width: auto;
+}
+
+.formulario-admin button,
+.acoes-admin button,
+.tabela-admin button,
+.link-botao {
+  padding: 0.55rem 0.8rem;
+  border: 0;
+  border-radius: 4px;
+  background: #245c91;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+  text-decoration: none;
+}
+
+.tabela-admin {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+
+.tabela-admin th,
+.tabela-admin td {
+  padding: 0.75rem;
+  border-bottom: 1px solid #d5dbe1;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.tabela-admin td button {
+  margin-right: 0.4rem;
+}
+
+.tabela-admin .botao-perigo {
+  background: #a52e32;
+}
+
+.imagem-produto-admin {
+  width: 56px;
+  height: 56px;
+  border-radius: 4px;
+  object-fit: cover;
+}
+
+.mensagem-admin {
+  margin: 1rem 0;
+  color: #8a2528;
+}
+
+@media (max-width: 640px) {
+  .tabela-admin {
+    font-size: 0.9rem;
+  }
+
+  .tabela-admin th,
+  .tabela-admin td {
+    padding: 0.5rem 0.3rem;
+  }
+}
